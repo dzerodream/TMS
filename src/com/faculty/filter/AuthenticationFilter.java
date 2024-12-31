@@ -20,8 +20,7 @@ public class AuthenticationFilter implements Filter {
         // 不需要过滤的资源
         if (path.equals("/login.jsp") ||
                 path.equals("/login") ||
-                path.startsWith("/css/") ||
-                path.startsWith("/js/")) {
+                path.startsWith("/static/")) {
             chain.doFilter(request, response);
             return;
         }

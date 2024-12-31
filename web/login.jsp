@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>教职工管理系统 - 登录</title>
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/login.css">
     </head>
 
     <body>
@@ -26,7 +26,7 @@
                 </form>
             </div>
         </div>
-        <script src="js/login.js"></script>
+        <script src="${pageContext.request.contextPath}/static/js/login.js"></script>
     </body>
 
     </html>
