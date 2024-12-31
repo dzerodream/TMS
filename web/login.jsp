@@ -19,7 +19,9 @@
                     <div class="input-group">
                         <input type="password" name="password" required placeholder="密码">
                     </div>
-                    <div class="error-message" id="errorMsg"></div>
+                    <div class="error-message" id="errorMsg">
+                        <%= request.getAttribute("error") !=null ? request.getAttribute("error") : "" %>
+                    </div>
                     <button type="submit">登录</button>
                 </form>
             </div>
