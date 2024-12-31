@@ -26,7 +26,13 @@ public class LoginServlet extends HttpServlet {
             if (faculty != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("faculty", faculty);
-                response.sendRedirect("index.jsp");
+
+                // 根据角色重定向到不同页面
+                if (faculty.getRoleId() == 1) { // 超级管理员
+                    response.sendRedirect(request.getContextPath() + "/admin/index.jsp");
+                } else {
+                    response.sendRedirect(request.getContextPath() + "/index.jsp");
+                }
             } else {
                 request.setAttribute("error", "教职工编号或密码错误");
                 request.getRequestDispatcher("/login.jsp").forward(request, response);

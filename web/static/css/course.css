@@ -1,0 +1,200 @@
+/* 课程表格样式 */
+.course-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.course-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.course-table th,
+.course-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.course-table th {
+    background-color: #fafafa;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+.course-table tbody tr:hover {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+/* 工具栏样式 */
+.toolbar {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar-left {
+    display: flex;
+    gap: 12px;
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* 搜索框样式 */
+.search-box {
+    position: relative;
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #bfbfbf;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-box .search-icon:hover {
+    color: #1890ff;
+}
+
+/* 搜索结果高亮 */
+.highlight {
+    background-color: #ffd591;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+/* 无搜索结果提示 */
+.no-result {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* 操作链接样式 */
+.action-link {
+    color: #1890ff;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.action-link.delete {
+    color: #ff4d4f;
+}
+
+.separator {
+    color: #ddd;
+    margin: 0 4px;
+}
+
+/* 批量删除按钮 */
+.batch-delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* 复选框样式 */
+.course-table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.course-table th:first-child,
+.course-table td:first-child {
+    width: 40px;
+    text-align: center;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.form-group input[type="number"] {
+    width: 120px;
+}
+
+/* 按钮样式 */
+.btn-submit {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #f0f0f0;
+    color: #666;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+}

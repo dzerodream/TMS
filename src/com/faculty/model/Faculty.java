@@ -1,11 +1,12 @@
 package com.faculty.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Faculty {
     private int facultyId;
     private String facultyName;
     private String departmentId;
+    private String departmentName;
     private int roleId;
     private String phoneNumber;
     private String idNumber;
@@ -13,8 +14,9 @@ public class Faculty {
     private Date hireDate;
     private Date leaveDate;
     private String password;
+    private long leaveDays;
 
-    // Getter和Setter方法
+    // Getters and Setters
     public int getFacultyId() {
         return facultyId;
     }
@@ -37,6 +39,14 @@ public class Faculty {
 
     public void setDepartmentId(String departmentId) {
         this.departmentId = departmentId;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 
     public int getRoleId() {
@@ -93,5 +103,13 @@ public class Faculty {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public long getLeaveDays() {
+        return leaveDays;
+    }
+
+    public void setLeaveDays(long leaveDays) {
+        this.leaveDays = leaveDays;
     }
 }
