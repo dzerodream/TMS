@@ -1,0 +1,97 @@
+/* 薪酬日志表格样式 */
+.salary-log-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.salary-log-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.salary-log-table table th,
+.salary-log-table table td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.salary-log-table table th {
+    background-color: #fafafa;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+/* 教师姓名列 */
+.salary-log-table table td:first-child {
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 基本工资列 */
+.salary-log-table table td:nth-child(2) {
+    color: #1890ff;
+}
+
+/* 课时数列 */
+.salary-log-table table td:nth-child(3) {
+    color: #52c41a;
+}
+
+/* 课时费列 */
+.salary-log-table table td:nth-child(4) {
+    color: #1890ff;
+}
+
+/* 总薪资列 */
+.salary-log-table table td:last-child {
+    color: #1890ff;
+    font-weight: bold;
+}
+
+/* 月份选择器样式 */
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.month-selector label {
+    font-weight: 500;
+    color: #666;
+}
+
+.month-selector select {
+    padding: 6px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+/* 搜索框样式 */
+.search-box {
+    position: relative;
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}

@@ -1,0 +1,88 @@
+/* 班级表格样式 */
+.class-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.class-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.class-table th,
+.class-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.class-table th {
+    background-color: #fafafa;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+.class-table tbody tr:hover {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+/* 工具栏样式 */
+.toolbar {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar-left {
+    display: flex;
+    gap: 12px;
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* 搜索框样式 */
+.search-box {
+    position: relative;
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+/* 操作链接样式 */
+.action-link {
+    color: #1890ff;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.action-link.delete {
+    color: #ff4d4f;
+}

@@ -1,0 +1,323 @@
+/* 课程安排表格样式 */
+.schedule-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.schedule-table th {
+    background-color: #fafafa;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* 表单组样式优化 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+/* 时间输入组样式 */
+.time-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.time-inputs input[type="number"] {
+    width: 100px;
+}
+
+.time-inputs select {
+    width: 120px;
+}
+
+.time-inputs span {
+    color: #666;
+    margin: 0 5px;
+}
+
+/* 上课对象选择样式 */
+.target-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.target-selection>select {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.target-selection select[multiple] {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.target-selection select[multiple] option {
+    padding: 8px 12px;
+    margin: 2px 0;
+    border-radius: 2px;
+}
+
+.target-selection select[multiple] option:hover {
+    background-color: #f5f5f5;
+}
+
+/* 模态框内容区域优化 */
+.modal-content {
+    max-width: 600px;
+    width: 90%;
+}
+
+.modal-body {
+    padding: 20px 30px;
+}
+
+/* 按钮样式优化 */
+.add-btn {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* 修改工具栏样式 */
+.toolbar {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    /* 确保左右两端对齐 */
+    align-items: center;
+}
+
+.toolbar-left {
+    /* 保持左侧按钮的样式 */
+}
+
+.toolbar-right {
+    /* 添加右侧搜索框容器样式 */
+    margin-left: auto;
+    /* 将搜索框推到右边 */
+}
+
+/* 优化搜索框样式 */
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    cursor: pointer;
+}
+
+/* 批量删除按钮样式 */
+.batch-delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.batch-delete-btn:hover {
+    background-color: #ff7875;
+}
+
+/* 复选框列样式 */
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+    width: 40px;
+    text-align: center;
+}
+
+.schedule-table input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* 操作链接样式 */
+.action-link {
+    color: #1890ff;
+    text-decoration: none;
+    margin: 0 4px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.action-link:hover {
+    background-color: #e6f7ff;
+}
+
+.action-link.delete {
+    color: #ff4d4f;
+}
+
+.action-link.delete:hover {
+    background-color: #fff1f0;
+}
+
+.schedule-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.schedule-header {
+    margin-bottom: 20px;
+}
+
+.week-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.week-selector select {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.week-selector select:focus {
+    border-color: #1890ff;
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.schedule-table th {
+    background: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+.class-time {
+    background: #f5f5f5;
+    font-weight: bold;
+    width: 100px;
+}
+
+.schedule-cell {
+    height: 100px;
+    position: relative;
+}
+
+.course-info {
+    background: #e6f7ff;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+.course-name {
+    font-weight: bold;
+    color: #1890ff;
+    margin-bottom: 4px;
+}
+
+.course-location {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.course-class {
+    color: #999;
+    font-size: 12px;
+}
